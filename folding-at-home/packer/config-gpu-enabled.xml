@@ -1,0 +1,7 @@
+<config>
+  <fold-anon v="false"/> 
+  <gpu v="true"/>  
+  <power v="full"/>
+  <user v="helping-others"/> 
+  <slot id="1" type="GPU"/>
+</config>

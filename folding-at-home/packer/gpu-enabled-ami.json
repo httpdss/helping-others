@@ -1,0 +1,29 @@
+{
+  "builders": [
+    {
+      "type": "amazon-ebs",
+      "region": "us-east-1",
+      "source_ami": "ami-07c95cafbb788face",
+      "instance_type": "p3.2xlarge",
+      "ssh_username": "ubuntu",
+      "ami_name": "fah-gpu-enabled-v1"
+    }
+  ],
+  "provisioners": [
+    {
+      "type": "shell",
+      "script": "./installer.sh"
+    },
+    {
+      "type": "file",
+      "source": "./config-gpu-enabled.xml",
+      "destination": "/tmp/config.xml"
+    },
+    {
+      "type": "shell",
+      "inline": [
+        "sudo mv /tmp/config.xml /etc/fahclient/config.xml"
+      ]
+    }
+  ]
+}
