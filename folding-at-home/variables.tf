@@ -32,5 +32,3 @@ variable "spot_price" {
 
 # default = "ami-0b0aa5ef9a1150681"
 variable "ami_id" {}
-
-variable "public_key" {}

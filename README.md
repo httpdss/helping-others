@@ -38,8 +38,8 @@ with the generated AMIs you are ready to go.
 ```bash
 cd ./folding-at-home
 terraform init
-terraform plan -var ami_id=<ami_id generated> -var public_key="<your public key>"
-terraform apply -var ami_id=<ami_id generated> -var public_key="<your public key>"
+terraform plan -var ami_id=<ami_id generated>
+terraform apply -var ami_id=<ami_id generated>
 ```
 
 It's that easy.
