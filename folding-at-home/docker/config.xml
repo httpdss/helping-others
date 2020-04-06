@@ -1,0 +1,10 @@
+<config>
+  <fold-anon v="false"/> 
+  <gpu v="false"/>  
+  <power v="full"/>
+  <web-allow v="127.0.0.1 172.22.0.1/24"/> 
+  <web-deny v="0/0"/> 
+  <web-enable v="true"/> 
+  <user v="helpingOthers"/> 
+  <slot id="1" type="CPU"/>
+</config>

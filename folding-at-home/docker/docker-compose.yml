@@ -1,0 +1,8 @@
+version: "3.7"
+
+services: 
+  folding:
+    build: .
+    ports:
+      - 7396:7396
+      - 36330:36330
