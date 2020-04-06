@@ -28,7 +28,7 @@ module "ec2_spot_cluster" {
   instance_count         = var.instance_count
   ami                    = var.ami_id
   instance_type          = var.gpu_enabled ? var.instance_type_gpu : var.instance_type
-  vpc_security_group_ids = [module.security_group.this_security_group_id]
+  vpc_security_group_ids = ["${module.security_group.this_security_group_id}"]
   spot_price             = var.spot_price
   monitoring             = true
 
