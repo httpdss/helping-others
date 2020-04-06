@@ -2,6 +2,6 @@
   <fold-anon v="false"/> 
   <gpu v="true"/>  
   <power v="full"/>
-  <user v="helping-others"/> 
+  <user v="helpingOthers"/> 
   <slot id="1" type="GPU"/>
 </config>
