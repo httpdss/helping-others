@@ -23,9 +23,9 @@ module "security_group" {
 }
 
 module "ec2_spot_cluster" {
-  source                 = "httpdss/ec2-spot-instance/aws"
+  source                 = "github.com/httpdss/terraform-aws-ec2-spot-instance"
   name                   = var.cluster_name
-  instance_count         = var.instnace_count
+  instance_count         = var.instance_count
   ami                    = var.ami_id
   instance_type          = var.gpu_enabled ? var.instance_type_gpu : var.instance_type
   vpc_security_group_ids = [module.security_group.this_security_group_id]
