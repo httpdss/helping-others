@@ -1,4 +1,5 @@
 !#/bin/bash
+sudo apt-get update
 
 # Download backages
 wget https://download.foldingathome.org/releases/public/release/fahclient/debian-testing-64bit/v7.4/fahclient_7.4.4_amd64.deb
@@ -9,3 +10,8 @@ wget https://download.foldingathome.org/releases/public/release/fahviewer/debian
 sudo dpkg -i --force-depends fahclient_7.4.4_amd64.deb
 sudo dpkg -i --force-depends fahcontrol_7.4.4-1_all.deb
 sudo dpkg -i --force-depends fahviewer_7.4.4_amd64.deb
+
+sudo apt-get install -f
+
+sudo update-rc.d FAHClient defaults
+sudo update-rc.d FAHClient enable
